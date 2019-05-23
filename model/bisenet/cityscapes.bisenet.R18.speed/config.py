@@ -35,12 +35,12 @@ C.val_log_file = C.log_dir + '/val_' + exp_time + '.log'
 C.link_val_log_file = C.log_dir + '/val_last.log'
 
 """Data Dir and Weight Dir"""
-C.dataset_path = "/root/Source/Datasets/Segmentation/Cityscapes/"
+C.dataset_path = "/data/"
 C.img_root_folder = C.dataset_path
 C.gt_root_folder = C.dataset_path
-C.train_source = osp.join(C.dataset_path, "config_new/train.txt")
-C.eval_source = osp.join(C.dataset_path, "config_new/val.txt")
-C.test_source = osp.join(C.dataset_path, "config_new/test.txt")
+C.train_source = osp.join(C.dataset_path, "train.txt")
+C.eval_source = osp.join(C.dataset_path, "val.txt")
+C.test_source = osp.join(C.dataset_path, "test.txt")
 C.is_test = False
 
 """Path Config"""
